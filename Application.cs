@@ -23,11 +23,11 @@ namespace XMLToData
         /// Reads data from an XML file, creates user, order, and product objects, 
         /// and stores them in corresponding lists.
         /// </summary>
-        public void ReadXml()
+        public void ReadXml(string path)
         {
             User user = new User();
             Order order = new Order();
-            XDocument xml = XDocument.Load("D:\\Программирование\\XMLToData\\order.xml");
+            XDocument xml = XDocument.Load(path);
             XElement orders = xml.Element("orders");
 
             if (orders is not null)
@@ -37,7 +37,7 @@ namespace XMLToData
                     long id = Int64.Parse(orderXml.Element("no").Value);
                     DateOnly date = DateOnly.Parse(orderXml.Element("reg_date").Value);
                     double sum = Double.Parse(orderXml.Element("sum").Value);
-                    List<XElement>? productsXml = orderXml.Elements("product").ToList(); //orderXml.Element("product");
+                    List<XElement>? productsXml = orderXml.Elements("product").ToList();
                     XElement? userXml = orderXml.Element("user");
 
                     user = CreateUserFromXml(userXml);

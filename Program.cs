@@ -9,8 +9,12 @@ namespace XMLToData
     {
         private static void Main(string[] args)
         {
-            Application app = new Application(/*context*/);
-            app.ReadXml();
+            var configuration = new ConfigurationBuilder()
+                .AddUserSecrets(Assembly.GetExecutingAssembly())
+                .Build();
+            string path = configuration.GetConnectionString("XmlPath");
+            Application app = new Application();
+            app.ReadXml(path);
         }
     }
 }

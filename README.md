@@ -15,9 +15,11 @@ Used technologies:
 
 ### 2)Create a  [User Secrets file](https://learn.microsoft.com/en-us/aspnet/core/security/app-secrets?view=aspnetcore-7.0&tabs=windows).
 
-### 3) Add your the connection string in the secret file.
+### 3) Add your the connection strings for the database in the secret file.
 
-### 3) Create database:
+### 4) Add your the path to the XML file in the secret file.
+
+### 5) Create database:
 ```
 Write in package manager console in visual studio next command:
 `Update-Database`
@@ -25,7 +27,7 @@ Write in package manager console in visual studio next command:
 or write in CLI next command:
 `dotnet ef database update`
 ```
-### 4) Start the project:
+### 6) Start the project:
 ```
 You can start from Visual Studio by `F5` or clicking run button
 
