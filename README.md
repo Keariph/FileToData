@@ -20,16 +20,17 @@ Used technologies:
 ### 4) Add your the path to the XML file in the secret file.
 
 ### 5) Create database:
-```
-Write in package manager console in visual studio next command:
-`Update-Database`
 
+Write in package manager console in visual studio next command:
+```
+`Update-Database`
+```
 or write in CLI next command:
+```
 `dotnet ef database update`
 ```
 ### 6) Start the project:
-```
+
 You can start from Visual Studio by `F5` or clicking run button
 
 or you can start by CLI in `XMLToData` directory writing `dotnet run` command
-```
