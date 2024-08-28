@@ -4,7 +4,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
-namespace XMLToData.Migrations
+namespace FileToData.Migrations
 {
     /// <inheritdoc />
     public partial class newMigration : Migration
@@ -46,7 +46,7 @@ namespace XMLToData.Migrations
                 {
                     id = table.Column<long>(type: "bigint", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    date = table.Column<DateOnly>(type: "date", nullable: false),
+                    date = table.Column<DateTime>(type: "date", nullable: false),
                     user_id = table.Column<long>(type: "bigint", nullable: false),
                     total_cost = table.Column<double>(type: "double precision", nullable: false)
                 },

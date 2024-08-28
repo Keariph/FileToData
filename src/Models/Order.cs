@@ -1,6 +1,4 @@
-﻿using System.Xml.Serialization;
-
-namespace XMLToData.Models
+﻿namespace FileToData
 {
     /// <summary>
     /// Represents a order info with details such as date and total cost.
@@ -14,7 +12,7 @@ namespace XMLToData.Models
         /// <param name="date"></param>
         /// <param name="user"></param>
         /// <param name="totalCost"></param>
-        public Order(long id, DateOnly date, User user, double totalCost)
+        public Order(long id, DateTime date, User user, double totalCost)
         {
             Id = id;
             Date = date;
@@ -37,7 +35,7 @@ namespace XMLToData.Models
         /// <summary>
         /// Gets or sets the date of the order.
         /// </summary>
-        public DateOnly Date { get; set; }
+        public DateTime Date { get; set; }
 
         /// <summary>
         /// Gets or sets foreign key of the <see cref="XMLToData.Models.User"/> for the order.

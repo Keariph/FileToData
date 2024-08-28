@@ -1,7 +1,6 @@
 ﻿using System.Xml.Linq;
-using XMLToData.Models;
 
-namespace XMLToData
+namespace FileToData
 {
     /// <summary>
     /// The Application class handles reading data from an XML file, creating user, order, and product objects, 
@@ -35,7 +34,7 @@ namespace XMLToData
                 foreach (XElement orderXml in orders.Elements("order"))
                 {
                     long id = Int64.Parse(orderXml.Element("no").Value);
-                    DateOnly date = DateOnly.Parse(orderXml.Element("reg_date").Value);
+                    DateTime date = DateTime.Parse(orderXml.Element("reg_date").Value);
                     double sum = Double.Parse(orderXml.Element("sum").Value);
                     List<XElement>? productsXml = orderXml.Elements("product").ToList();
                     XElement? userXml = orderXml.Element("user");

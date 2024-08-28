@@ -1,4 +1,4 @@
-﻿namespace XMLToData.Models
+﻿namespace FileToData
 {
     /// <summary>
     /// Represents a order info with details such as date and total cost.

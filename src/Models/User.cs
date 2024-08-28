@@ -1,4 +1,4 @@
-﻿namespace XMLToData.Models
+﻿namespace FileToData
 {
     /// <summary>
     /// Represents a user info with details such as name and email.
@@ -7,9 +7,6 @@
     {
         /// <summary>
         /// Initializes a new instance <see cref="User"/> class.
-        /// <para>
-        /// Used to serialize and deserialize an object.
-        /// </para>
         /// </summary>
         /// <param name="id"></param>
         /// <param name="name"></param>

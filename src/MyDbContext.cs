@@ -1,9 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using System.Reflection;
-using XMLToData.Models;
 
-namespace XMLToData
+namespace FileToData
 {
     /// <summary>
     /// Represents a session with the database for managing uses,orders, and products.
@@ -18,7 +17,7 @@ namespace XMLToData
         /// <summary>
         /// Initializes a new instance of the <see cref="MyDbContext"/> class.
         /// </summary>
-        public MyDbContext(){}
+        public MyDbContext() { }
 
         /// <summary>
         /// Gets or sets the <see cref="DbSet{User}"/> that can be used to query and save instances of <see cref="User"/>.

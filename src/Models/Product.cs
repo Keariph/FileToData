@@ -1,6 +1,4 @@
-﻿using System.Xml.Serialization;
-
-namespace XMLToData.Models
+﻿namespace FileToData
 {
     /// <summary>
     /// Represents a product info with details such as name and price.
