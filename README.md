@@ -1,7 +1,7 @@
-# XMLToData
+# FileToData
 
 ## Description
-The console app for reading data from an XML file and saving it to the database.
+The console app reads data from a file such as XML and saves it in the database.
 Used technologies:
 
 - Visual Studio 2022
@@ -21,7 +21,7 @@ Used technologies:
 
 ### 5) Create database:
 
-Write in package manager console in visual studio next command:
+Write in the package manager console in Visual Studio the next command:
 ```
 `Update-Database`
 ```
@@ -31,6 +31,6 @@ or write in CLI next command:
 ```
 ### 6) Start the project:
 
-You can start from Visual Studio by `F5` or clicking run button
+You can start from Visual Studio by `F5` or click the run button
 
-or you can start by CLI in `XMLToData` directory writing `dotnet run` command
+or you can start by CLI in the `FileToData` directory writing the `dotnet run` command
